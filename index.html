@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <style>
-    body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
-    iframe { width: 100%; height: 100%; border: none; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    .wrapper {
+      position: absolute;
+      top: -55px; /* ব্যানারটিকে স্ক্রিনের ওপরের অংশে ঠেলে ঢেকে দেওয়া হয়েছে */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 55px);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbx3hUgfxsETLvIYuFTvjRlp2nUQbMSb9o5Ybfjg2zvEVufEDZcPWVpqBxdYwKownQt3zg/exec"></iframe>
+
+  <div class="wrapper">
+    <iframe src="https://script.google.com/macros/s/AKfycbx3hUgfxsETLvIYuFTvjRlp2nUQbMSb9o5Ybfjg2zvEVufEDZcPWVpqBxdYwKownQt3zg/exec"></iframe>
+  </div>
+
 </body>
 </html>
